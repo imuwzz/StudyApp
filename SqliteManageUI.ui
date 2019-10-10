@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SqliteManage</class>
+ <widget class="QWidget" name="SqliteManage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>922</width>
+    <height>769</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_newdb">
+         <property name="text">
+          <string>新建数据库</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_opendb">
+         <property name="text">
+          <string>打开数据库</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_writeupdate">
+         <property name="text">
+          <string>写入更改</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_rollbackupdate">
+         <property name="text">
+          <string>倒退更改</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab_database_structure">
+        <attribute name="title">
+         <string>数据库结构</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>12</y>
+           <width>861</width>
+           <height>661</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_datastructure">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QPushButton" name="pushButton_create_database">
+              <property name="text">
+               <string>创建表</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_create_index">
+              <property name="text">
+               <string>创建索引</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_repair_table">
+              <property name="text">
+               <string>修改表</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_delete_table">
+              <property name="text">
+               <string>删除表</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTreeWidget" name="treeWidget_data_structure">
+            <column>
+             <property name="text">
+              <string notr="true">1</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>浏览数据</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>751</width>
+           <height>591</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>表</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="text">
+               <string>刷新</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_3">
+              <property name="text">
+               <string>新建记录</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>删除记录</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWidget"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QPushButton" name="pushButton_5">
+              <property name="text">
+               <string>第一页</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_6">
+              <property name="text">
+               <string> 上一页</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>0 - 0 / 0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="text">
+               <string>下一页</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="text">
+               <string>最后一页</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_4">
+              <property name="text">
+               <string>转到</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>执行SQL</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

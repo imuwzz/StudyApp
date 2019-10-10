@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SqliteTableEdit</class>
+ <widget class="QWidget" name="SqliteTableEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>905</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>841</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_main">
+    <item>
+     <widget class="QGroupBox" name="groupBox_table">
+      <property name="title">
+       <string>表</string>
+      </property>
+      <widget class="QWidget" name="horizontalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>791</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_table">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_tablename"/>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_no_rowid">
+          <property name="text">
+           <string>无Rowid</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="checkBox_temporary_table">
+          <property name="text">
+           <string>临时表</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_field">
+      <property name="title">
+       <string>字段</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>52</y>
+         <width>791</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_field">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_field_button">
+          <item>
+           <widget class="QPushButton" name="pushButton_addfield">
+            <property name="text">
+             <string>添加字段</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_delfiedl">
+            <property name="text">
+             <string>删除字段</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_moveup_field">
+            <property name="text">
+             <string>上移字段</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_movedown_field">
+            <property name="text">
+             <string>下移字段</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_field"/>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_sql">
+      <property name="title">
+       <string>SQL</string>
+      </property>
+      <widget class="QWidget" name="verticalLayoutWidget_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>791</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_sql">
+        <item>
+         <widget class="QTreeWidget" name="treeWidget_sql">
+          <column>
+           <property name="text">
+            <string notr="true">1</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_okcancel">
+      <item>
+       <widget class="QPushButton" name="pushButton_ok">
+        <property name="text">
+         <string>OK</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_cancel">
+        <property name="text">
+         <string>Cancel</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
